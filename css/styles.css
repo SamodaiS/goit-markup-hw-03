@@ -40,7 +40,6 @@ body {
  /* heder nav */
 .seit-nav {
   display: flex;
- 
 }
 
 .seit-nav .item {
@@ -53,13 +52,14 @@ body {
 
 /* contact-heder */
 .contact-heder {
-  display: flex;
+  display: flex; 
+  margin-left: 156px;
 }
 
 .contact-heder .item + .item {
   margin-left: 40px;
 }
-  
+
   /* Header */
     .header-logo {
     display: block;
@@ -216,7 +216,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: #2E2F42
+    color: var(--title-text-color);
   }
   .project-name {
     font-weight: 500;
@@ -269,7 +269,7 @@ body {
   
   .project-title {
     margin-bottom:72px;
-    margin-top: 0;
+    margin-top: 120px;
   }
   
   /* Footer */
@@ -299,15 +299,26 @@ body {
   }
 
 
-/* person container */
-.person-list {
-  display: flex;
+/* person container */ 
+.person-card {
+  display: flex; 
+  margin-left: 156px;
+ 
 }
 
-.person-list .person {
-  margin-right: 24px;
+.person-card .list-person  {
+  margin-right: 40px;
+  align-items: center;
+} 
+
+.person-card .list-person:last-child {
+  margin-left: 0;
 }
 
-.person-list .person:last-child {
-  margin-right: 0;
+.content-portfolio {
+  align-self: center;
+}
+.person-title {
+  margin-bottom:72px;
+  margin-top: 120px;
 }
