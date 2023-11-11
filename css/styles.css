@@ -24,11 +24,20 @@ body {
     text-decoration: none;
     font-style: normal;
   }
+  /* wraper */
+  .wraper {
+ flex-direction: row-reverse;
+ width: 1440px;
+ margin: 0 auto;
+
+}
 
   /* heder container */
+ 
   .container-header {
     display: flex;
     align-items: center;
+   height: 72px;
   }
 
   /* header logo */
@@ -38,29 +47,33 @@ body {
   }
 
  /* heder nav */
-.seit-nav {
+.nav-list {
   display: flex;
 }
 
-.seit-nav .item {
+.nav-list .nav-item {
   margin-right: 40px;
 }
 
-.seit-nav .item:last-child {
+.nav-list .nav-item:last-child {
   margin-right: 0;
 }
 
-/* contact-heder */
+/* heder contact */
 .contact-heder {
   display: flex; 
-  margin-left: 156px;
+  margin-left: 232px;
 }
 
-.contact-heder .item + .item {
+.contact-heder .contact-item + .contact-item {
   margin-left: 40px;
 }
 
   /* Header */
+  .page-heder {
+    height: 72px;
+  }
+
     .header-logo {
     display: block;
     padding-top: 24px;
@@ -120,10 +133,14 @@ body {
   .contact-link:focus {
     color: var(--accent-color);
   }
-  
+  /* 1 hero container */
+
+
+
   /* 1 Hero */
   .hero-section {
       background-color: var(--title-text-color);
+      height: 600px;
   }
   
   .hero-title {
@@ -133,7 +150,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--primari-white-color);
     text-align: center;
-    text-transform: uppercase;
+    
   }
   
   .hero-button {
@@ -143,6 +160,7 @@ body {
     color: var(--primari-white-color);
     background-color: var(--lodo-accent); 
     text-align: center;
+    
   }
   
   
@@ -161,6 +179,10 @@ body {
   }
   
   /* 2 Benefit */
+  .container-benefit {
+    height: 344px;
+  }
+    
   .benefit-title {
     font-weight: 500;
     font-size: 20px;
@@ -175,7 +197,7 @@ body {
   }
   
   /* 3 Person */
-  .section-person {
+  .person-section {
   background-color: var(--secondary-bg-color); 
   }
   
@@ -189,7 +211,7 @@ body {
   color: var(--title-text-color);
   }
   
-  .list-person {
+  .person-list {
   background-color: var(--primari-white-color);
   }
   
@@ -199,17 +221,19 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em; 
   color: var(--title-text-color);
+  text-align: center;
   }
   
   .person-job {
     line-height: 1.5; 
     letter-spacing: 0.02em;
+    text-align: center;
   }
   /*  4 Portfolio */
-  .section-portfolio {
-    background-color: var(--secondary-bg-color); 
+  .portfolio-section {
+    background-color: var(--primari-white-color); 
   }
-  .project-title {
+  .portfolio-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -218,7 +242,7 @@ body {
     text-transform: capitalize;
     color: var(--title-text-color);
   }
-  .project-name {
+  .portfolio-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -227,22 +251,22 @@ body {
     color: var(--title-text-color);
   }
   
-  .project-funktion {
+  .portfolio-text {
     line-height: 1.5;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em;   
   }
 
     /*container-portfolio*/
-    .container-portfolio {
+    .portfolio-container {
       width: 1128px;
-      padding-left: 0;
+      padding-left: 0x;
       padding-right: 0;
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 120px;
     }
   
-    .card-portfolio {
+    .portfolio-list {
      padding: 0;
      margin: 0;
      list-style: none;
@@ -253,23 +277,10 @@ body {
     }
   
   
-  .card-portfolio .item {
-    outline: 1px solid #E7E9FC;
+  .portfolio-list .portfolio-item {
     flex-basis: calc(100% / 3 -24px);
      margin-top: 48px;
      margin-left: 24px; 
-  }
-  
-  .content-portfolio {
-    margin-top: 32px;
-    margin-right: 16px;
-    margin-bottom: 32px; 
-    margin-left: 16px;
-  }
-  
-  .project-title {
-    margin-bottom:72px;
-    margin-top: 120px;
   }
   
   /* Footer */
@@ -294,31 +305,68 @@ body {
     
   }
   
-  footer {
+  .section-footer {
     background-color: var(--title-text-color);
+    height: 321px;
   }
 
 
-/* person container */ 
-.person-card {
-  display: flex; 
-  margin-left: 156px;
+
+
+  /* person container */ 
+   .prson-container {
+    width: 1440px;
+    height: 732px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 120px;
+  
+  }
+
+  .person-list {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -24px;
+  
+  }
+
+
+  .person-list .person-item {
+  
+  flex-basis: calc(100% / 4 -24px);
+   margin-left: 24px; 
+}
+
+
+
+
+/* benefits-container */
+.benefit-container {
+  width: 1128px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.benefit-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  
  
 }
 
-.person-card .list-person  {
-  margin-right: 40px;
-  align-items: center;
+.benefit-list .benefit-item {
+  flex-basis: calc(100% / 4-24px);
+  margin-left: 24px
 } 
 
-.person-card .list-person:last-child {
-  margin-left: 0;
-}
-
-.content-portfolio {
-  align-self: center;
-}
-.person-title {
-  margin-bottom:72px;
-  margin-top: 120px;
-}
+/* footer-container */
