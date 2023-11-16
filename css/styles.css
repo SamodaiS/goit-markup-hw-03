@@ -98,23 +98,14 @@
 /* heder contact */
 .contact-heder {
   display: flex; 
-  margin-left: 232px;
+  gap: 40px;
 }
 
-.contact-heder .contact-item + .contact-item {
-  margin-left: 40px;
-}
+
+
 
   /* Header */
-  .page-heder {
-    height: 72px;
-  }
-
     .header-logo {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
       font-family: 'Raleway', sans-serif;
       font-weight: 700;
       font-size: 18px;
@@ -129,10 +120,6 @@
   } 
   
   .header-link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -152,10 +139,6 @@
   }
   
   .contact-link {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
