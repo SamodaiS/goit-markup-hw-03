@@ -1,29 +1,59 @@
- :root {  
- --primri-text-color: #434455;
- --title-text-color: #2E2F42;
- --accent-color: #404BBF;
- --lodo-accent: #4d5ae5;
- --primari-white-color: #FFFFFF;
- --secondary-bg-color: #F4F4FD;
+:root {  
+  --primri-text-color: #434455;
+  --title-text-color: #2E2F42;
+  --accent-color: #404BBF;
+  --lodo-accent: #4d5ae5;
+  --primari-white-color: #FFFFFF;
+  --secondary-bg-color: #F4F4FD;
+   }
  
-  }
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--primri-text-color);
-    background-color: var(--primari-white-color);
-  }
-  
-  ul {
-    list-style-type: none;
-  }
-  
-  a {
-    text-decoration: none;
-    font-style: normal;
-  }
+ body {
+     font-family: 'Roboto', sans-serif;
+     font-weight: 400;
+     font-size: 16px;
+     color: var(--primri-text-color);
+     background-color: var(--primari-white-color);
+   }
+   
+   ul,ol {
+     list-style-type: none;
+     margin-top: 0;
+     margin-bottom: 0;
+     padding-left: 0;
+   }
+ 
+   button {
+     cursor: pointer;
+   }
+ 
+   img {
+     display: block;
+   }
+   
+   a {
+     text-decoration: none;
+     font-style: normal;
+   }
+ 
+   .list {
+     list-style-type: none;
+   }
+ 
+   .link {
+     text-decoration: none;
+   } 
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+ margin-top: 0;
+ margin-bottom: 0;
+ }
+ 
   /* wraper */
   .wraper {
  flex-direction: row-reverse;
@@ -301,8 +331,10 @@ body {
   .footer-text {
     letter-spacing: 0.02em;
     line-height: 1.5;
-    color: var(--secondary-bg-color); 
-    
+    color: var(--secondary-bg-color);  
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
   }
   
   .section-footer {
@@ -337,12 +369,8 @@ body {
 
 
   .person-list .person-item {
-  
-  flex-basis: calc(100% / 4 -24px);
    margin-left: 24px; 
 }
-
-
 
 
 /* benefits-container */
@@ -370,3 +398,25 @@ body {
 } 
 
 /* footer-container */
+ .section-footer {
+  width: 1440px;
+  height: 312px;
+  flex-shrink: 0;
+ }
+
+ .footer-logo {
+  margin-top: 101px;
+  margin-bottom: 189px;
+  margin-left: 156px;
+ }
+
+ .footer-text {
+  width: 264px;
+ padding-top: 140px;
+ }
+
+ /* Hero */
+ .hero-title {
+  margin-top: 188px;
+ padding-right: 156px;
+ }
