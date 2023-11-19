@@ -168,7 +168,8 @@ padding: 188px 0;
  
 .hero-title {
   max-width: 496px;
- 
+ margin-bottom: 48px;
+ margin-left: 296px;
 }
 
 .hero-button {
@@ -179,6 +180,7 @@ padding: 188px 0;
   background-color: #4d5ae5; 
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 480px;
 }
  
   /* 1 Hero */
