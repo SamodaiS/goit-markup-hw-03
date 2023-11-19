@@ -165,12 +165,7 @@ margin-left: 332px;
 .hero-section {
 padding: 188px 0;
  }
-
- .container-hero {
-  flex-direction: column;
  
- }
-
 .hero-title {
   max-width: 496px;
  
@@ -181,7 +176,9 @@ padding: 188px 0;
   min-width: 169px;
   height: 56px;
   border: none;
+  background-color: #4d5ae5; 
   border-radius: 4px;
+  cursor: pointer;
 }
  
   /* 1 Hero */
@@ -209,17 +206,11 @@ padding: 188px 0;
     text-align: center;
   }
   
-  .hero-button:hover {
-  background-color: var(--accent-color); 
-  }
-  
+  .hero-button:hover, 
   .hero-button:focus {
   background-color: var(--accent-color);
   }
-  
-  .hero-button {
-  cursor: pointer;
-  }
+   
   
 /* benefi-container */
 .benefit-section {
