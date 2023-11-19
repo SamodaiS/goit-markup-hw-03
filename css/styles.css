@@ -46,15 +46,13 @@
  margin-bottom: 0;
  }
 
- .list {
+.list {
   list-style-type: none;
 }
 
 .link {
   text-decoration: none;
 } 
-
-
 
  .visually-hidden {
   position: absolute;
