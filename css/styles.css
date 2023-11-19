@@ -69,6 +69,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px; 
+  }
  
   /* wraper */
   .wraper {
@@ -81,14 +87,6 @@
   padding-top: 50px;
   padding-bottom: 50px;
  }
-
-
-/* div container */
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px; 
-  }
 
   /* heder container */
 
@@ -128,8 +126,8 @@
 
 /* heder contact */
 .contact-heder {
-  display: flex;
-  gap: 40px;
+display: flex;
+gap: 40px;
  padding-left: 332px;
  }
  
