@@ -104,7 +104,7 @@
 
 .nav-list {
 display: flex;
-column-gap: 40px;
+gap: 40px;
 }
 
 .item {
@@ -113,7 +113,7 @@ column-gap: 40px;
 
   .contact-list {
     display: flex;
-   column-gap: 40px;
+ gap: 40px;
    }
 
  
@@ -410,7 +410,7 @@ padding-bottom: 120px;
 .footer-logo {
   display: inline-block;
   margin-top: 101,5px;
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 
 .footer-text {
