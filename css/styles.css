@@ -92,26 +92,34 @@
     align-items: center;
   }
 
+  .nav-header { 
+   display: flex; 
+   align-items: center;
+  }
+
   .header-logo {
     margin-right: 76px;
   }
 
 .nav-list {
-  display: flex;
-
-}
-
-.nav-list .item:not(:first-child) {
-  margin-left: 40px;
-}
- .header-contact {
-  margin-left: auto;
- }
-
-.contact-list {
 display: flex;
 gap: 40px;
- }
+margin-right: auto;
+}
+
+.item {
+  padding: 24px 0;
+}
+
+  .contact-list {
+    display: flex;
+    gap: 40px;
+   }
+
+   .contact-link {
+    margin-left: auto;
+   }
+
  
    /* HEADER*/
     .header-logo {
