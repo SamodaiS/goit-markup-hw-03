@@ -86,7 +86,8 @@
     border-bottom: 1px solid #e7e9fc;
   }
  
-  .nav-header {
+  .section-header
+  .container {
     display: flex;
     align-items: center;
   }
@@ -95,15 +96,19 @@
     margin-right: 76px;
   }
 
-
 .nav-list {
   display: flex;
-  gap: 40px;
-  margin-right: auto;
-  
+
 }
- 
-.contact-heder {
+
+.nav-list .item:not(:first-child) {
+  margin-left: 40px;
+}
+ .header-contact {
+  margin-left: auto;
+ }
+
+.contact-list {
 display: flex;
 gap: 40px;
  }
