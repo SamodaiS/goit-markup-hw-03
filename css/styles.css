@@ -80,7 +80,9 @@
  }
 
   /* heder container */
-
+  .section-header{
+  border-bottom: 1px solid #e7e9fc
+}
 
   .section-header
   .container{
